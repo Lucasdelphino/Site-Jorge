@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Jorge</title>
+</head>
+
+<body>
+    <div class="cabecalho">.
+        <div class="cabecalho-tudo">
+            <div class="coluna-esq">
+                <img src="imagin/jorge.jpg" class="jorge">
+            </div>
+            <div class="coluna-esq">
+                <h1 class="titulo">OLÁ, EU<br> SOU O JORGE</h1>
+                <h2 class="sub">Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Suscipit placeat,
+                    consectetur id provident iusto voluptatibus doloremque voluptate ,BR.accusantium, commodi dicta
+                    facilis non minima similique quasi quidem natus fuga illum magnam?</h2>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    <div class="proj">PROJETOS</div>
+
+    <div class="row">
+        <div class="column">
+            <img src="imagin/play.webp" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="imagin/tesla.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="imagin/xobx.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="imagin/play.webp" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="imagin/tesla.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="imagin/xobx.jpg" style="width:100%">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="column">
+                <img class="demo" src="imagin/play.webp" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="imagin/tesla.jpg" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="imagin/xobx.jpg" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="funcao.js"></script>
+</body>
+
+</html>
